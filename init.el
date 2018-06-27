@@ -32,3 +32,5 @@
   (spacemacs/setup-startup-hook)
   (require 'server)
   (unless (server-running-p) (server-start)))
+(eval-after-load 'company
+  '(push 'company-robe company-backends))
